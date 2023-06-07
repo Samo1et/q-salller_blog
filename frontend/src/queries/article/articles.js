@@ -1,8 +1,8 @@
 import gql from "graphql-tag";
 
-const ARTICLE_QUERY = gql`
-  query Article($slug: String!) {
-    articles(filters: { slug: { eq: $slug } }) {
+const ARTICLES_QUERY = gql`
+  query Articles {
+    articles {
       data {
         attributes {
           slug
@@ -28,4 +28,4 @@ const ARTICLE_QUERY = gql`
   }
 `;
 
-export default ARTICLE_QUERY;
+export default ARTICLES_QUERY;

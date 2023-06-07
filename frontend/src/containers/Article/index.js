@@ -12,6 +12,7 @@ const Article = () => {
   return (
     <Query query={ARTICLE_QUERY} slug={slug}>
       {({ data: { articles } }) => {
+        console.log(articles)
         if (articles.data.length) {
           const imageUrl =
             process.env.NODE_ENV !== "development"
