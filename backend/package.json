@@ -1,5 +1,14 @@
 {
-  "name": "q-saller-blog",
+  "dependencies": {
+    "@strapi/plugin-graphql": "^4.0.0",
+    "lodash.set": "^4.3.2",
+    "mime-types": "^2.1.27",
+    "@strapi/strapi": "4.10.7",
+    "@strapi/plugin-users-permissions": "4.10.7",
+    "@strapi/plugin-i18n": "4.10.7",
+    "better-sqlite3": "8.0.1"
+  },
+  "name": "backend",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -10,17 +19,12 @@
     "strapi": "strapi"
   },
   "devDependencies": {},
-  "dependencies": {
-    "@strapi/strapi": "4.10.7",
-    "@strapi/plugin-users-permissions": "4.10.7",
-    "@strapi/plugin-i18n": "4.10.7",
-    "better-sqlite3": "8.0.1"
-  },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "fd63d959-68ce-4e6b-a5c9-1ce7eee8a4d9"
+    "uuid": "14d3a151-d5b2-4c4f-a955-635ecf07bcc5",
+    "template": "@strapi/template-blog@1.0.0"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",
